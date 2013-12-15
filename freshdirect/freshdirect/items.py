@@ -7,7 +7,6 @@ from scrapy.item import Item, Field
 
 class FreshdirectItem(Item):
     # define the fields for your item here like:
-    # name = Field()
     name = Field()
     image = Field()
     link = Field()

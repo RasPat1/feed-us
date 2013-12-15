@@ -1,0 +1,19 @@
+scrape notes
+
+rating
+span itemprop="ratingvalue"
+span itemprop="ratingCount"
+name
+div.title18
+
+div.text-13-bold
+
+Price
+span.productPageSinglePrice
+span.productPageSinglePriceUnit
+
+https://www.google.com/webmasters/tools/richsnippets
+https://www.freshdirect.com/product.jsp?catId=chclt_bak&productId=pas_chcsfle_frz&variant=feat_pop4&trk=feat&rank=1&impId=1415515303_p1
+
+itemprop title
+itemprop image contains /product/
