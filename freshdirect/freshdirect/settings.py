@@ -12,5 +12,8 @@
 SPIDER_MODULES = ['freshdirect.spiders']
 NEWSPIDER_MODULE = 'freshdirect.spiders'
 DEFAULT_ITEM_CLASS = 'freshdirect.items.FDItem'
+ITEM_PIPELINES = {
+    'freshdirect.pipelines.NamePipeline': 300
+}
 # USER_AGENT = '%s/%s' % (BOT_NAME, BOT_VERSION)
 
