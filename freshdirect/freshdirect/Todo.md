@@ -10,3 +10,9 @@ TODO
  * use linejson exporter so object is not to big
  * seperate object by department or category
 * Download images on scrape [2](http://doc.scrapy.org/en/latest/topics/images.html "Scrapy Docs")
+* access json resource in angular
+* populate autocomplete fields using item name
+
+Bugs
+-----------
+* /category.jsp pages are beign scraped as well? why??

@@ -16,11 +16,14 @@ class FdSpider(BaseSpider):
 	def parse(self, response):
 		sel = Selector(response)
 		name = sel.xpath("//title/text()").extract()
-		link = response.url
-		image = sel.xpath("//div[contains(concat(' ', normalize-space(@class), ' '), ' product-image-container ')]/img/@src").extract()
+		url = response.url
+		imagePath = sel.xpath("//div[contains(concat(' ', normalize-space(@class), ' '), ' product-image-container ')]/img/@src").extract()
 		price = sel.css("span.productPageSinglePrice::text").extract()
 		priceUnit = sel.css("span.productPageSinglePriceUnit::text").extract()
 		item = FDItem()
+		item['name'] = name
+		item['imagePath'] = imagePath
+		item['url'] = url
 		item['price'] = price
 		item['priceUnit'] = priceUnit
 		return item

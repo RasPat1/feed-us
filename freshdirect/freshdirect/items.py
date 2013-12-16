@@ -6,7 +6,6 @@
 from scrapy.item import Item, Field
 
 class FDItem(Item):
-    # define the fields for your item here like:
     name = Field()
     imagePath = Field()
     url = Field()

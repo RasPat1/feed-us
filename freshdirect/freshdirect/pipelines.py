@@ -5,4 +5,6 @@
 
 class FreshdirectPipeline(object):
     def process_item(self, item, spider):
+        if !item['name']:
+            raise DropItem()
         return item
