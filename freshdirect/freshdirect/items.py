@@ -5,12 +5,13 @@
 
 from scrapy.item import Item, Field
 
-class FreshdirectItem(Item):
+class FDItem(Item):
     # define the fields for your item here like:
     name = Field()
-    image = Field()
-    link = Field()
+    imagePath = Field()
+    url = Field()
     price = Field()
+    priceUnit = Field()
     about = Field()
     nutrition = Field()
     qualityRating = Field()
