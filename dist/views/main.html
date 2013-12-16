@@ -1,9 +1,24 @@
 <div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
+<h1>Food</h1>
+<div class="search-field">
+<span>Search: </span>
+<input class="search" type="text" ng-model="searchText">
+<a ng-click="clearSearch()" class="btn">X</a>
+</div>
+
+<div class="item" ng-repeat="food in foods | toArray | orderBy:'rating':true | filter:searchText">
+	<div class="score" ng-class="{true:'pos', false:'neg'}[food.rating >= 0]">
+	{{food.rating}}</div>
+	<input class="food-name" type="text" ng-model="food.name">
+	<a class="btn" ng-click="vote(food.id, 1)">Up</a>
+	<a class="btn" ng-click="vote(food.id, -1)">Down</a>
+	<a class="btn" ng-click="removeTodo(food.id)">X</a>
+</div>
+
+<form ng-submit="addFood()">
+	<div class="controls form-inline">
+		<input type="text" ng-model="food.name" size="40">
+		<input type="submit" class="btn btn-primary" value="Add">
+	</div>
+</form>
 </div>

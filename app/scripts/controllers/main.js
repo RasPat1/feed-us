@@ -16,7 +16,6 @@ angular.module('feedUsApp')
       $scope.newFood('cheese');
       $scope.newFood('vegetable cream cheese');
       $scope.newFood('rat poison');
-
     };
     
     $scope.newFood = function(name) {  //This is actually a constructor treat it that way
@@ -41,6 +40,7 @@ angular.module('feedUsApp')
     $scope.removeTodo = function(id) {
       delete $scope.foods[id];
     };
+    
     $scope.vote = function(id, d){
       $scope.foods[id].rating = $scope.foods[id].rating + d;
     };
