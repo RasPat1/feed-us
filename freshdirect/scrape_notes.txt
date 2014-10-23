@@ -17,3 +17,9 @@ https://www.freshdirect.com/product.jsp?catId=chclt_bak&productId=pas_chcsfle_fr
 
 itemprop title
 itemprop image contains /product/
+
+
+Changed to /pdp.jsp
+Title: h1.pdpTitle
+Price: div.pdp-price
+image: div.main-image img
