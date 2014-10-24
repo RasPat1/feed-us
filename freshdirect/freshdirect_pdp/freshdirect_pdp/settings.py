@@ -12,6 +12,10 @@ BOT_NAME = 'freshdirect_pdp'
 
 SPIDER_MODULES = ['freshdirect_pdp.spiders']
 NEWSPIDER_MODULE = 'freshdirect_pdp.spiders'
+ITEM_PIPELINES = {
+    'freshdirect_pdp.pipelines.SanitizePipeline': 300,
+    'freshdirect_pdp.pipelines.DuplicatePipeline': 500
+}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'freshdirect_pdp (+http://www.yourdomain.com)'

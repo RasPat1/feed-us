@@ -20,5 +20,6 @@ class FdSpider(CrawlSpider):
     	item['title'] = response.css('h1.pdpTitle::text').extract()
     	item['price'] = response.css('div.pdp-price::text').extract()
     	item['image'] = response.css('div.main-image img::attr(src)').extract()
+    	# item['url'] = response.url
     	return item
 

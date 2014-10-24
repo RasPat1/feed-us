@@ -12,4 +12,4 @@ class FreshdirectPdpItem(scrapy.Item):
 	title = scrapy.Field()
 	price = scrapy.Field()
 	image = scrapy.Field()
-    
+	# url = scrapy.Field()
